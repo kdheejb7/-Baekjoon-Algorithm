@@ -2,7 +2,7 @@ r_, c_ = map(int, input().split())
 maze = [[0]*(c_) for row in range(r_)]
 visited = maze.copy()
 
-def dfs():
+def bfs():
     q = []
     q.append([0,0,1])
     dc = [-1,0,1,0]
@@ -22,5 +22,5 @@ def dfs():
 
 for i in range(r_):
     maze[i] = list(map(int,input()))
-dfs()
+bfs()
 
